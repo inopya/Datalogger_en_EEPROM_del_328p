@@ -113,7 +113,7 @@
       - Una vez se agote la eprom, parpadeos azules hasta el proximo reinicio.
 
                     
-    Este Sketch usa 14482 bytes, el (47%) del espacio de ROM
+    Este Sketch usa 14490 bytes, el (47%) del espacio de ROM
     Las variables Globales usan 579 bytes, el (28%)  del espacio de RAM
  
       
