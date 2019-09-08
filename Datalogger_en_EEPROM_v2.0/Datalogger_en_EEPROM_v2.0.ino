@@ -489,10 +489,15 @@ void loop()
       }
       FLAG_paracaidas_cerrado = false;          // para evitar nuevos accesos al servo
       
-      /* aprovechamos la condicion de descenso para grabar en eeprom la altura maxima */
-      EEPROM.write(2, int(altura_max));                       //en la posicion 2, la parte entera
-      EEPROM.write(3, int((altura_max-int(altura_max))*100)); //en la posicion 3, la parte decimal
-      
+      /* aprovechamos la condicion de descenso para grabar en eeprom un registro con la altura maxima */
+      if(FLAG_uso_eeprom == true){
+        //asi evitamos que la altura maxima de sobreescriba.
+        //pues en versiones anteriores, si simulamos el proceso de lanzamiento 
+        //aun con la eeprom desactivada, el registro de altura maxima si se realizaba
+        //lo que llevaba a perder dicho registro, aunque se mantenian los datos del vuelo.
+        EEPROM.write(2, int(altura_max));                       //en la posicion 2, la parte entera
+        EEPROM.write(3, int((altura_max-int(altura_max))*100)); //en la posicion 3, la parte decimal
+      }      
       servo_paracaidas.detach();    //desactivarlo si queremos evitar que el servo se quede consumiendo
     }
   }
