@@ -244,7 +244,8 @@ int puntero_eeprom = 4;                   // Reservamos las cuatro primeras posi
 
 float presion_lanzamiento;                // Usada como referencia para el calculos de la cota Cero
 unsigned int tiempo_cero;                 // Referencia del momento de inicio de toma de muestras
-
+unsigned long momento_blink = 0;          // Control de tiempos para parpadeo del led en espera
+unsigned long momento_monitor = 0;        // Control de tiempos mostrar datos en modo monitor de cota cero
 
 //------------------------------------------------------
 // Creamos las instancia de los objetos:
@@ -321,8 +322,8 @@ void setup()
   
   while(comando >= 0){
     unsigned long ahora = millis();
-    if(ahora >= momento_inicio){
-      momento_inicio = ahora + 500;
+    if(ahora >= momento_blink){
+      momento_blink = ahora + 500;
       FLAG_blink_led = NOT FLAG_blink_led;
     }
     FLAG_blink_led ? mostrarColor(100, 040, 000) : mostrarColor(0,0,0); //parpadeo NARANJA
@@ -387,8 +388,8 @@ void setup()
       }
     }
     if(FLAG_monitor_cota_cero==true){
-      if(millis()>momento_inicio){
-        momento_inicio = millis()+2000;
+      if(millis()>momento_monitor){
+        momento_monitor = millis()+2000;
         bmp280.triggerMeasurement(); //peticion de nueva medicion
         bmp280.awaitMeasurement();   //esperar a que el sensor termine la medicion
         float temperatura = bmp280.getTemperature();
