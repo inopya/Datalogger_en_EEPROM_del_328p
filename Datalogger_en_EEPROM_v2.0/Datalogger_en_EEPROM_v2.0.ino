@@ -200,7 +200,7 @@
 #define ORbit   |
 #define XORbit  ^
 #define NOTbit  ~
-//Versiones actuales de Arduino ya contemplan 'and', 'or'...  pero arrastro la costumbre de cuando no era asi
+//Versiones actuales de Arduino IDE ya contemplan 'and', 'or'...  pero arrastro la costumbre de cuando no era asi
 
       
 /*mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
