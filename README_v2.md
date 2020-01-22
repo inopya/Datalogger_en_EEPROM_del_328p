@@ -106,11 +106,11 @@
     Las variables Globales usan 579 bytes, el (28%)  del espacio de RAM
  
  
-      
+/*      
    CONEXIONES:
 
   =======================
-   ARDUINO     BMP280
+  ARDUINO     BMP280
   =======================
     A4   --->   SDA  
     A5   --->   SCL
@@ -151,9 +151,11 @@
  ---  COLORES DE REFERENCIA PARA LA TIRA / LEDS DIRECCIONABLES --- 
 
   (255, 000, 000);    // rojo
+  
   (000, 255, 000);    // verde
+  
   (000, 000, 255);    // azul
   (100, 040, 000);    // naranja suave
   (100, 000, 060);    // rosa suave
   
-
+*/
