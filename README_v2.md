@@ -107,47 +107,45 @@
  
  
       
-  CONEXIONES:
+   CONEXIONES:
 
- =======================
-  ARDUINO     BMP280
- =======================
-
-   A4   --->   SDA  
-   A5   --->   SCL
-   GND  --->   GND
-   3.3v --->   Vcc
-
-   
- =======================
-  ARDUINO     Servo 9g
- =======================
-   D10  --->   PWM  
-   GND  --->   GND
-   5v   --->   Vcc
+  =======================
+   ARDUINO     BMP280
+  =======================
+    A4   --->   SDA  
+    A5   --->   SCL
+    GND  --->   GND
+    3.3v --->   Vcc
 
 
-
- =======================
-  ARDUINO     LED RGB
- =======================
-   D2   --->   DATA  
-   GND  --->   GND
-   5v   --->   Vcc
-
-
- =======================
-  ARDUINO     PULSADOR
- =======================
-  5v    --->   PIN1  
-  D2    --->   PIN2
+  =======================
+   ARDUINO     Servo 9g
+  =======================
+    D10  --->   PWM  
+    GND  --->   GND
+    5v   --->   Vcc
 
 
- =======================
-     RESISTENCIA 1MH
- =======================
-  D2 <--- R  --->   GND  
- 
+  =======================
+   ARDUINO     LED RGB
+  =======================
+    D2   --->   DATA  
+    GND  --->   GND
+    5v   --->   Vcc
+
+
+  =======================
+   ARDUINO     PULSADOR
+  =======================
+   5v    --->   PIN1  
+   D2    --->   PIN2
+
+
+  =======================
+      RESISTENCIA 1MH
+  =======================
+   D2 <--- R  --->   GND  
+
 
 
  ---  COLORES DE REFERENCIA PARA LA TIRA / LEDS DIRECCIONABLES --- 
