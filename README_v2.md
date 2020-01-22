@@ -105,12 +105,12 @@
     Este Sketch usa 14482 bytes, el (47%) del espacio de ROM
     Las variables Globales usan 579 bytes, el (28%)  del espacio de RAM
  
- 
-/*      
+
    CONEXIONES:
 
   =======================
   ARDUINO     BMP280
+  
   =======================
     A4   --->   SDA  
     A5   --->   SCL
@@ -120,15 +120,19 @@
 
   =======================
    ARDUINO     Servo 9g
+   
   =======================
     D10  --->   PWM  
     GND  --->   GND
     5v   --->   Vcc
 
 
+
   =======================
    ARDUINO     LED RGB
+   
   =======================
+  
     D2   --->   DATA  
     GND  --->   GND
     5v   --->   Vcc
@@ -155,7 +159,10 @@
   (000, 255, 000);    // verde
   
   (000, 000, 255);    // azul
+  
   (100, 040, 000);    // naranja suave
+  
   (100, 000, 060);    // rosa suave
   
-*/
+
+
