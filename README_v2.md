@@ -105,6 +105,7 @@
     Este Sketch usa 14482 bytes, el (47%) del espacio de ROM
     Las variables Globales usan 579 bytes, el (28%)  del espacio de RAM
  
+ 
       
   CONEXIONES:
 
@@ -146,10 +147,9 @@
      RESISTENCIA 1MH
  =======================
   D2 <--- R  --->   GND  
+ 
 
-*/ 
 
-/*
  ---  COLORES DE REFERENCIA PARA LA TIRA / LEDS DIRECCIONABLES --- 
 
   (255, 000, 000);    // rojo
@@ -158,4 +158,4 @@
   (100, 040, 000);    // naranja suave
   (100, 000, 060);    // rosa suave
   
-*/
+
