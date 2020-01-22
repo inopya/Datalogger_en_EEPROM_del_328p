@@ -4,7 +4,7 @@
   
   Datalogger simple para cohete de agua.
   
- Version 1, - Usando Arduino BLE NANO (con BT incorporado), vease README_v1 
+ Version 1 - Usando Arduino BLE NANO, con BT incorporado, (vease README_v1) 
  
- Version 2 - Usando Arduino NANO, vease README_v2 
+ Version 2 - Usando Arduino NANO, (vease README_v2)
   
