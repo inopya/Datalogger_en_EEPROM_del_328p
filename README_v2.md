@@ -31,24 +31,32 @@
       cuando detecte que el cohete ha entrado en descenso mediante (UMBRAL_DESCENSO), valor en metros.
       En este momento en las posiciones 2 y 3 de la eeprom se guardara la altura maxima a efectos de respaldo.
 
-  4.- Para que se active el protocolo de grabacion y se desencadenen el resto de acciones, 
-      ha de darse la orden explicita mediante la utilizacion del pulsador.
+  4.- Para que se active el protocolo de grabacion mediante el control de (UMBRAL_LANZAMIENTO) 
+      y se desencadenen el resto de   acciones, ha de darse la orden explicita mediante la utilizacion del pulsador.
       
   5.- Los comando disponibles por puerto serie y a efectos de DEBUG son los siguientes,
       indistintamente mayusculas o minusculas:
+      
       - (P) Test del servo, giros en uno u otro sentido. Util para comprobar 
             el correcto funcionamiento del mecanismo de apertura del paracaidas.
+            
       - (E) Habilita el uso de eeprom para guardar datos (¡por defecto se encuentra desactivada!).
             Hay que activarla de forma explicita mediante este comando.
+            
       - (D) Deshabilita el uso de eeprom. (¡Ojo, Por defecto se encuentra desactivada!)
-      - (L) Lista el contenido de la eeprom. Utilidad para sacar los datos a puerto Serie.      
+      
+      - (L) Lista el contenido de la eeprom. Utilidad para sacar los datos a puerto Serie. 
+      
       - (M) Activa/desactiva el monitor de cota cero, que mostrara por serie la cota actual
             de manera que podemos evaluar las variaciones que se producen estando en reposo 
             y asi ajustar mejor UMBRAL_LANZAMIENTO para evitar inicios de grabacion indeseados.
+            
       -(0-9) Modifica el UMBRAL_LANZAMIENTO por esa cantidad de metros. Cero metros util para pruebas.
             Recomendables valores de almenos 2 o 3 metros, debido a la inestabilidad del sensor.
+            
       - (A) finaliza la entrada de comandos e inicia el calibrado a cota CERO y la espera hasta superar 
             el UMBRAL_LANZAMIENTO para iniciar la grabacion de datos.
+            
       - (Z) Elimina la condicion de superar el UMBRAL_LANZAMIENTO. Inicia el calibrado a cota CERO
             y espera la pulsacion de (A) para que se inicie la grabacion de datos.
             
