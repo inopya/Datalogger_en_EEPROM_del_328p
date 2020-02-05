@@ -223,7 +223,10 @@ float UMBRAL_DESCENSO = 2;            // Valor en metros que ha de descender des
                                       // que se active la apertura del paracaidas
                                       
 /* creacion de un nuevo tipo de datos para contener las muestras */
-struct struct_type_datos { uint16_t tiempo;  int16_t altura;  };
+struct struct_type_datos { 
+                            uint16_t tiempo;
+                            int16_t altura;
+                         };
 
 
 float altura_actual = 0;                  // Altura actual del cohete
